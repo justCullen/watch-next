@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+# Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Watch Next
 
-## Available Scripts
+## Project Description
 
-In the project directory, you can run:
+Watch Next is a React and Airtable webapp designed to help users keep track of what to watch and where to watch it, as well as log shows and movies they have watched.
 
-### `npm start`
+## Wireframes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The wireframes below show sample views for Watch Next, focusing on mobile and desktop. The last image is a component hierarchy.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![Mobile](https://i.imgur.com/ufQcoRY.png)
+![Mobile Menu](https://i.imgur.com/kaTjQoP.png)
+![Mobile Form](https://i.imgur.com/rYXYBGM.png)
+![Desktop](https://i.imgur.com/ExBclga.png)
+![Desktop Form](https://i.imgur.com/vN6xO5N.png)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Component Hierarchy
+![Component Hierachy](https://i.imgur.com/6U6Z1Pi.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## API and Data Sample
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+What follows is a snippet of JSON returned by Airtable:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```json
+{
+    "records": [
+        {
+            "id": "recSIQAIow3hnRNOT",
+            "fields": {
+                "title": "The Shape of Water",
+                "type": "Movie",
+                "source": "Hulu",
+                "year": "2017",
+                "priority": "High",
+                "recommend": "Yes",
+                "thoughts": "Loved it!"
+            },
+            "createdTime": "2021-02-15T20:50:58.000Z"
+        },
+        {
+            "id": "recrypoSKRsCl2ZNL",
+            "fields": {},
+            "createdTime": "2021-02-15T20:50:58.000Z"
+        },
+        {
+            "id": "recdh4fftJkMJEXmE",
+            "fields": {},
+            "createdTime": "2021-02-15T20:50:58.000Z"
+        }
+    ],
+    "offset": "recdh4fftJkMJEXmE"
+}
+```
 
-### `npm run eject`
+### MVP/PostMVP
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The functionality will then be divided into two separate lists: MVP and PostMVP.  Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.  
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### MVP 
+*These are examples only. Replace with your own MVP features.*
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Find and use external api 
+- Render data on page 
+- Allow user to choose favorites 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### PostMVP  
+*These are examples only. Replace with your own Post-MVP features.*
 
-## Learn More
+- Add second API
+- Use local storage to save user favorites
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Schedule
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This schedule will be used to keep track of your progress throughout the week and align with our expectations. Here's an example.
 
-### Code Splitting
+|  Day | Deliverable | Status
+|---|---| ---|
+|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|July 13| Project Approval | Incomplete
+|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|July 14| Pseudocode / actual code | Incomplete
+|July 15| Initial Clickable Model  | Incomplete
+|July 16| MVP | Incomplete
+|July 17| Presentations | Incomplete
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Timeframes
 
-### Analyzing the Bundle Size
+Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Time frames are also key in the development cycle.  You have limited time to code all parts of your app.  Your estimates can then be used to evalute possibilities based on time needed and the actual time you have before the app must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add an additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
-### Making a Progressive Web App
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
+| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
+| Total | H | 6hrs| 5hrs | 5hrs |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## SWOT Analysis
 
-### Advanced Configuration
+### Strengths:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Weaknesses:
 
-### Deployment
+### Opportunities:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Threats:
