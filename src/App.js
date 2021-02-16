@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { Route } from "react-router-dom";
+import { baseURL, config } from "./services/index";
+import Header from "./components/Header"
 import './App.css';
 
 function App() {
+  const [shows, setShows] = useState([]);
+  const [toggleFetch, setToggleFetch] = useState(false);
+
+  useEffect(() => {
+    const getMedia = async () => {
+      const resp = await axios.get(baseURL, config);
+      setShows(resp.data.records);
+    };
+    getMedia();
+  }, [toggleFetch]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+
+
     </div>
   );
 }
