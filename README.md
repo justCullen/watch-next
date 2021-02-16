@@ -74,7 +74,7 @@ What follows is a snippet of JSON returned by Airtable:
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Feb. 13-15| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|Feb. 13-15| Prompt / Wireframes / Timeframes | Complete
 |Feb. 16| Project Approval | Incomplete
 |Feb. 17| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Feb. 17| Pseudocode / actual code | Incomplete
