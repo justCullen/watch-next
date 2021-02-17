@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+import axios from "axios";
+import { baseURL, config } from "../services/";
 
 function DetailToWatch(props) {
   const [title, setTitle] = useState("");
@@ -7,6 +10,7 @@ function DetailToWatch(props) {
   const [source, setSource] = useState("");
   const [year, setYear] = useState("");
   const [priority, setPriority] = useState("");
+  const history = useHistory();
   const params = useParams();
 
   useEffect(() => {
@@ -18,10 +22,16 @@ function DetailToWatch(props) {
         setSource(foundShow.fields.source);
         setYear(foundShow.fields.year);
         setPriority(foundShow.fields.priority);
-        console.log(year);
       }
     }
   }, [])
+
+  const destroy = async () => {
+    const showURL = `${baseURL}/${params.id}`
+    await axios.delete(showURL, config);
+    props.setToggleFetch((curr) => !curr);
+    history.push("/");
+  }
 
   return (
     <div>
@@ -30,6 +40,10 @@ function DetailToWatch(props) {
       <h5>{source}</h5>
       <h5>{year}</h5>
       <h5>Priority: {priority}</h5>
+      <Link to={`/edit/${params.id}`}>
+        <button>Edit</button>
+      </Link>
+        <button onClick={destroy}>Delete</button>
     </div>
   )
 }

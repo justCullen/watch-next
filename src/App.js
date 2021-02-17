@@ -3,6 +3,7 @@ import axios from "axios";
 import { Route } from "react-router-dom";
 import { baseURL, config } from "./services/index";
 import Header from "./components/Header";
+import Form from "./components/Form";
 import TitleToWatch from "./components/TitleToWatch";
 import DetailToWatch from "./components/DetailToWatch";
 import './App.css';
@@ -34,7 +35,13 @@ function App() {
         </div>
       </Route>
       <Route path="/features/:id">
-        <DetailToWatch shows={shows} />
+        <DetailToWatch shows={shows} setToggleFetch={setToggleFetch}/>
+      </Route>
+      <Route path="/new">
+        <Form shows={shows} setToggleFetch={setToggleFetch} />
+      </Route>
+      <Route path="/edit/:id">
+        <Form shows={shows} setToggleFetch={setToggleFetch} />
       </Route>
     </div>
   );

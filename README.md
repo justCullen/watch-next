@@ -75,7 +75,7 @@ What follows is a snippet of JSON returned by Airtable:
 |  Day | Deliverable | Status
 |---|---| ---|
 |Feb. 13-15| Prompt / Wireframes / Timeframes | Complete
-|Feb. 16| Project Approval | Incomplete
+|Feb. 16| Project Approval | Complete
 |Feb. 17| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Feb. 17| Pseudocode / actual code | Incomplete
 |Feb. 18| Initial Clickable Model  | Incomplete
@@ -86,18 +86,18 @@ What follows is a snippet of JSON returned by Airtable:
 
 ## Timeframes
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Homepage | H | 3hrs| -hrs | -hrs |
-| Title Components | H | 3hrs| -hrs | -hrs |
-| Detail Components | H | 3hrs| -hrs | -hrs |
-| Create Forms | H | 3hrs| -hrs | -hrs |
-| Edit Forms | H | 3hrs| -hrs | -hrs |
-| Promote Form | H | 3hrs| -hrs | -hrs |
-| mediaquery | H | 6hrs| -hrs | -hrs |
-| CSS | H | 8hrs| -hrs | -hrs |
-|Debugging | H| 8hrs| -hrs | -hrs
-| Total | H | 40hrs| -hrs | -hrs |
+| Component | Priority | Estimated Time | Actual Time |
+| --- | :---: |  :---: | :---: |
+| Homepage | H | 3hrs| 1hrs |
+| Title Components | H | 3hrs| 2hrs |
+| Detail Components | H | 3hrs| 2hrs |
+| Create Forms | H | 3hrs| -hrs |
+| Edit Forms | H | 3hrs| -hrs |
+| Promote Form | H | 3hrs| -hrs |
+| mediaquery | H | 6hrs| -hrs |
+| CSS | H | 8hrs| -hrs |
+| Debugging | H| 8hrs| -hrs |
+| Total | H | 40hrs| 5hrs |
 
 ## SWOT Analysis
 
