@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { Route } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 import { baseURL, config } from "./services/index";
 import Header from "./components/Header";
 import Form from "./components/Form";
 import TitleToWatch from "./components/TitleToWatch";
 import DetailToWatch from "./components/DetailToWatch";
+import Reviews from "./components/Reviews";
 import './App.css';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
     <div className="App">
       <Header />
       <Route exact path="/">
+      <Link to="/new">What's Next?</Link>
         <div className="show-container">
           {shows.map((show) => (
             <TitleToWatch
@@ -34,7 +36,7 @@ function App() {
           ))}
         </div>
       </Route>
-      <Route path="/features/:id">
+      <Route path="/watchnext/:id">
         <DetailToWatch shows={shows} setToggleFetch={setToggleFetch}/>
       </Route>
       <Route path="/new">
@@ -42,6 +44,9 @@ function App() {
       </Route>
       <Route path="/edit/:id">
         <Form shows={shows} setToggleFetch={setToggleFetch} />
+      </Route>
+      <Route path="/reviews/">
+        <Reviews shows={shows} setToggleFetch={setToggleFetch} />
       </Route>
     </div>
   );

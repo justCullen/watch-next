@@ -8,7 +8,7 @@ function TitleToWatch(props) {
 
   return (
     <div>
-      <Link to={`/features/${props.show.id}`}>
+      <Link to={`/watchnext/${props.show.id}`}>
         <h3>{title}</h3>
         </Link>
     </div>
