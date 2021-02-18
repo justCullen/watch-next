@@ -22,13 +22,15 @@ function App() {
     getMedia();
   }, [toggleFetch]);
 
+  const filteredShows = shows.filter(show => !show.fields.thoughts);
+
   return (
     <div className="App">
       <Header />
       <Route exact path="/">
       <Link to="/new">What's Next?</Link>
         <div className="show-container">
-          {shows.map((show) => (
+          {filteredShows.map((show) => (
             <TitleToWatch
               key={show.id}
               show={show}

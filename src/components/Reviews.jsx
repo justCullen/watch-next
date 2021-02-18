@@ -12,13 +12,15 @@ function Reviews(props) {
   // const [shows, setShows] = useState([]);
   // const [toggleFetch, setToggleFetch] = useState(false);
 
+  const filteredShows = props.shows.filter(show => show.fields.thoughts);
+
   return (
     <div className="App">
       {/* <HeaderReviews /> */}
       {/* <Route exact path="/"> */}
       <Link to="/newreview">Watch Something?</Link>
         <div className="show-container">
-          {props.shows.map((show) => (
+          {filteredShows.map((show) => (
             <TitleWatched
               key={show.id}
               show={show}
