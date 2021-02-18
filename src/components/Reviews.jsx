@@ -4,6 +4,7 @@ import { Link, Route } from "react-router-dom";
 // import { baseURL, config } from "./services/index";
 // import HeaderReviews from "./HeaderReviews";
 // import Form from "./Form";
+import Footer from "./Footer";
 import TitleWatched from "./TitleWatched";
 
 // import './App.css';
@@ -18,8 +19,10 @@ function Reviews(props) {
     <div className="App">
       {/* <HeaderReviews /> */}
       {/* <Route exact path="/"> */}
-      <Link to="/newreview">Watch Something?</Link>
-        <div className="show-container">
+      <div className="new-entry">
+        <Link to="/newreview">Watch Something?</Link>
+        </div>
+        <main className="show-container">
           {filteredShows.map((show) => (
             <TitleWatched
               key={show.id}
@@ -27,7 +30,10 @@ function Reviews(props) {
               setToggleFetch={props.setToggleFetch}
             />
           ))}
-        </div>
+        </main>
+        {/* <footer className="Footer">
+          <Footer />
+        </footer> */}
       {/* </Route> */}
       {/* <Route path="/newreview">
         <Form shows={props.shows} setToggleFetch={props.setToggleFetch} />

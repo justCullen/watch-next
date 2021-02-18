@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link, Route } from "react-router-dom";
 import { baseURL, config } from "./services/index";
 import Header from "./components/Header";
+// import Footer from "./components/Footer";
 import Form from "./components/Form";
 import Promote from "./components/Promote";
 import TitleToWatch from "./components/TitleToWatch";
@@ -26,11 +27,13 @@ function App() {
   const filteredShows = shows.filter(show => !show.fields.thoughts);
 
   return (
-    <div className="App">
-      <Header />
+    <div className="app">
+        <Header />
       <Route exact path="/">
-      <Link to="/new">What's Next?</Link>
-        <div className="show-container">
+        <div className="new-entry">
+          <Link to="/new">What's Next?</Link>
+        </div>
+        <main className="show-container">
           {filteredShows.map((show) => (
             <TitleToWatch
               key={show.id}
@@ -38,8 +41,11 @@ function App() {
               setToggleFetch={setToggleFetch}
             />
           ))}
-        </div>
+        </main>
       </Route>
+        {/* <footer className="Footer">
+          <Footer />
+        </footer> */}
       <Route path="/watchnext/:id">
         <DetailToWatch shows={shows} setToggleFetch={setToggleFetch}/>
       </Route>
