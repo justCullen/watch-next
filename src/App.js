@@ -4,6 +4,7 @@ import { Link, Route } from "react-router-dom";
 import { baseURL, config } from "./services/index";
 import Header from "./components/Header";
 import Form from "./components/Form";
+import Promote from "./components/Promote";
 import TitleToWatch from "./components/TitleToWatch";
 import DetailToWatch from "./components/DetailToWatch";
 import Reviews from "./components/Reviews";
@@ -45,11 +46,17 @@ function App() {
       <Route path="/new">
         <Form shows={shows} setToggleFetch={setToggleFetch} />
       </Route>
-      <Route path="/edit/:id">
+      <Route path="/edittowatch/:id">
         <Form shows={shows} setToggleFetch={setToggleFetch} />
+      </Route>
+      <Route path="/promote/:id">
+        <Promote shows={shows} setToggleFetch={setToggleFetch} />
       </Route>
       <Route path="/reviews/">
         <Reviews shows={shows} setToggleFetch={setToggleFetch} />
+      </Route>
+      <Route path="/newreview/">
+        <Promote shows={shows} setToggleFetch={setToggleFetch} />
       </Route>
       <Route path="/watched/:id">
         <DetailWatched shows={shows} setToggleFetch={setToggleFetch}/>

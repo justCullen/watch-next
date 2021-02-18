@@ -40,8 +40,11 @@ function DetailToWatch(props) {
       <h5>{source}</h5>
       <h5>{year}</h5>
       <h5>Priority: {priority}</h5>
-      <Link to={`/edit/${params.id}`}>
+      <Link to={`/edittowatch/${params.id}`}>
         <button>Edit</button>
+      </Link>
+      <Link to={`/promote/${params.id}`}>
+        <button>Watched It!</button>
       </Link>
         <button onClick={destroy}>Delete</button>
     </div>

@@ -10,6 +10,8 @@ function DetailWatched(props) {
   const [source, setSource] = useState("");
   const [year, setYear] = useState("");
   const [priority, setPriority] = useState("");
+  const [recommend, setRecommend] = useState("");
+  const [thoughts, setThoughts] = useState("");
   const history = useHistory();
   const params = useParams();
 
@@ -22,6 +24,8 @@ function DetailWatched(props) {
         setSource(foundShow.fields.source);
         setYear(foundShow.fields.year);
         setPriority(foundShow.fields.priority);
+        setRecommend(foundShow.fields.recommend);
+        setThoughts(foundShow.fields.thoughts);
       }
     }
   }, [])
@@ -40,6 +44,8 @@ function DetailWatched(props) {
       <h5>{source}</h5>
       <h5>{year}</h5>
       <h5>Priority: {priority}</h5>
+      <h5>Recommend: {recommend}</h5>
+      <h5>Review: {thoughts}</h5>
       <Link to={`/edit/${params.id}`}>
         <button>Edit</button>
       </Link>

@@ -4,7 +4,7 @@
 
 ## Project Description
 
-Watch Next is a React and Airtable webapp designed to help users keep track of what to watch and where to watch it, as well as log shows and movies they have watched.
+Watch Next is a React and Airtable webapp designed to help users keep track of what to watch and where to watch it, as well as log shows and movies they have watched. It is a to-do list and record of shows and movies the user has watched.
 
 ## Wireframes
 
@@ -76,9 +76,9 @@ What follows is a snippet of JSON returned by Airtable:
 |---|---| ---|
 |Feb. 13-15| Prompt / Wireframes / Timeframes | Complete
 |Feb. 16| Project Approval | Complete
-|Feb. 17| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Feb. 17| Pseudocode / actual code | Incomplete
-|Feb. 18| Initial Clickable Model  | Incomplete
+|Feb. 17| Core Application Structure (HTML, CSS, etc.) | Complete
+|Feb. 17| Pseudocode / actual code | Complete
+|Feb. 18| Initial Clickable Model  | Complete
 |Feb. 19| mediaquery/CSS | Incomplete
 |Feb. 20| MVP | Incomplete
 |Feb. 21| Styling/Animations | Incomplete
@@ -90,14 +90,14 @@ What follows is a snippet of JSON returned by Airtable:
 | --- | :---: |  :---: | :---: |
 | Homepage | H | 3hrs| 1hrs |
 | Title Components | H | 3hrs| 2hrs |
-| Detail Components | H | 3hrs| 4hrs |
+| Detail Components | H | 3hrs| 5hrs |
 | Create Forms | H | 3hrs| 2hrs |
-| Edit Forms | H | 3hrs| 2hrs |
-| Promote Form | H | 3hrs| -hrs |
+| Edit Forms | H | 3hrs| 1hrs |
+| Promote Form | H | 3hrs| 1hrs |
 | mediaquery | H | 6hrs| -hrs |
 | CSS | H | 8hrs| -hrs |
-| Debugging | H| 8hrs| 2hrs |
-| Total | H | 40hrs| 13hrs |
+| Debugging | H| 8hrs| 3hrs |
+| Total | H | 40hrs| 15hrs |
 
 ## SWOT Analysis
 
