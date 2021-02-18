@@ -5,10 +5,10 @@ import { Link, Route } from "react-router-dom";
 // import HeaderReviews from "./HeaderReviews";
 // import Form from "./Form";
 import TitleWatched from "./TitleWatched";
-// import DetailWatched from "./DetailWatched";
+
 // import './App.css';
 
-function App(props) {
+function Reviews(props) {
   // const [shows, setShows] = useState([]);
   // const [toggleFetch, setToggleFetch] = useState(false);
 
@@ -27,9 +27,6 @@ function App(props) {
           ))}
         </div>
       {/* </Route> */}
-      {/* <Route path="/watched/:id">
-        <DetailWatched shows={props.shows} setToggleFetch={props.setToggleFetch}/>
-      </Route> */}
       {/* <Route path="/newreview">
         <Form shows={props.shows} setToggleFetch={props.setToggleFetch} />
       </Route> */}
@@ -40,4 +37,4 @@ function App(props) {
   );
 }
 
-export default App;
+export default Reviews;

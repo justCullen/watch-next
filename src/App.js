@@ -7,6 +7,7 @@ import Form from "./components/Form";
 import TitleToWatch from "./components/TitleToWatch";
 import DetailToWatch from "./components/DetailToWatch";
 import Reviews from "./components/Reviews";
+import DetailWatched from "./components/DetailWatched";
 import './App.css';
 
 function App() {
@@ -47,6 +48,9 @@ function App() {
       </Route>
       <Route path="/reviews/">
         <Reviews shows={shows} setToggleFetch={setToggleFetch} />
+      </Route>
+      <Route path="/watched/:id">
+        <DetailWatched shows={shows} setToggleFetch={setToggleFetch}/>
       </Route>
     </div>
   );

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import { baseURL, config } from "./services/";
+import { baseURL, config } from "../services/";
 
 function DetailWatched(props) {
   const [title, setTitle] = useState("");
