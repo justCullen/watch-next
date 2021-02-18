@@ -90,14 +90,14 @@ What follows is a snippet of JSON returned by Airtable:
 | --- | :---: |  :---: | :---: |
 | Homepage | H | 3hrs| 1hrs |
 | Title Components | H | 3hrs| 2hrs |
-| Detail Components | H | 3hrs| 2hrs |
-| Create Forms | H | 3hrs| -hrs |
-| Edit Forms | H | 3hrs| -hrs |
+| Detail Components | H | 3hrs| 4hrs |
+| Create Forms | H | 3hrs| 2hrs |
+| Edit Forms | H | 3hrs| 2hrs |
 | Promote Form | H | 3hrs| -hrs |
 | mediaquery | H | 6hrs| -hrs |
 | CSS | H | 8hrs| -hrs |
-| Debugging | H| 8hrs| -hrs |
-| Total | H | 40hrs| 5hrs |
+| Debugging | H| 8hrs| 2hrs |
+| Total | H | 40hrs| 13hrs |
 
 ## SWOT Analysis
 
