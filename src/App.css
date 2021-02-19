@@ -3,7 +3,7 @@
   flex-flow: column nowrap;
   align-items: center;
   text-align: center;
-  background-color: thistle;
+  background-color: grey;
   /* height: 100vh; */
 }
 
@@ -15,7 +15,7 @@ a:active {
 }
 
 a:hover {
-  color: grey;
+  color: slategray;
   text-decoration: none;
 }
 
@@ -29,17 +29,30 @@ nav {
 .header-link-one {
   background-color: tan;
   width: 50%;
+  border-radius: 25% 25% 0 0;
 }
 
 .header-link-two {
   background-color: thistle;
   width: 50%;
+  border-radius: 25% 25% 0 0;
 }
 
 .new-entry {
   background-color: tan;
   width: 100%;
 }
+
+/* .body {
+  width: 100%;
+  height: 100vh;
+}
+
+.link {
+  background-color: tan;
+  width: 100%;
+  height: 100vh;
+} */
 
 Form {
   background-color: tan;
@@ -83,7 +96,7 @@ Form {
 
 .title-watched {
   background-color: thistle;
-  /* width: 100%; */
+  width: 100vw;
 }
 
 main {
@@ -91,6 +104,7 @@ main {
   padding-bottom: 5%;
   width: 100%;
   height: 100vh;
+  /* background-color: thistle; */
   /* justify-content: flex-start; */
 }
 

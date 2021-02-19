@@ -28,10 +28,11 @@ function App() {
 
   return (
     <div className="app">
-        <Header />
+      <Header />
+      {/* <div className="body"> */}
       <Route exact path="/">
         <div className="new-entry">
-          <Link to="/new">What's Next?</Link>
+          <Link className="link" to="/new">What's Next?</Link>
         </div>
         <main className="title-to-watch">
           {filteredShows.map((show) => (
@@ -42,7 +43,8 @@ function App() {
             />
           ))}
         </main>
-      </Route>
+        </Route>
+        {/* </div> */}
         {/* <footer className="Footer">
           <Footer />
         </footer> */}
