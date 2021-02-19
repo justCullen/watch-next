@@ -16,13 +16,13 @@ function Reviews(props) {
   const filteredShows = props.shows.filter(show => show.fields.thoughts);
 
   return (
-    <div className="App">
+    <div className="app">
       {/* <HeaderReviews /> */}
       {/* <Route exact path="/"> */}
-      <div className="new-entry">
+      <div className="new-watched">
         <Link to="/newreview">Watch Something?</Link>
         </div>
-        <main className="show-container">
+        <main className="title-watched">
           {filteredShows.map((show) => (
             <TitleWatched
               key={show.id}

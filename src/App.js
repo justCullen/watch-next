@@ -33,7 +33,7 @@ function App() {
         <div className="new-entry">
           <Link to="/new">What's Next?</Link>
         </div>
-        <main className="show-container">
+        <main className="title-to-watch">
           {filteredShows.map((show) => (
             <TitleToWatch
               key={show.id}

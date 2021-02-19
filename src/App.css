@@ -3,6 +3,19 @@
   flex-flow: column nowrap;
   align-items: center;
   text-align: center;
+  background-color: thistle;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: none;
 }
 
 nav {
@@ -12,15 +25,40 @@ nav {
   width: 100%;
 }
 
-/* .header-link {
-  display: flex;
-  margin: 0% 10% 0% 10%;
-  justify-content: space-around;
-} */
+.header-link-one {
+  background-color: tan;
+  width: 50%;
+}
+
+.header-link-two {
+  background-color: thistle;
+  width: 50%;
+}
+
+.new-entry {
+  background-color: tan;
+  width: 100%;
+}
+
+.new-watched {
+  background-color: thistle;
+  width: 100%;
+}
+
+.title-to-watch {
+  background-color: tan;
+  /* width: 100%; */
+}
+
+.title-watched {
+  background-color: thistle;
+  /* width: 100%; */
+}
 
 main {
   /* display: flex; */
   padding-bottom: 5%;
+  width: 100%;
   /* justify-content: flex-start; */
 }
 
