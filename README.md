@@ -79,25 +79,25 @@ What follows is a snippet of JSON returned by Airtable:
 |Feb. 17| Core Application Structure (HTML, CSS, etc.) | Complete
 |Feb. 17| Pseudocode / actual code | Complete
 |Feb. 18| Initial Clickable Model  | Complete
-|Feb. 19| mediaquery/CSS | Incomplete
-|Feb. 20| MVP | Incomplete
+|Feb. 19| mediaquery/CSS | Complete
+|Feb. 20| MVP | Complete
 |Feb. 21| Styling/Animations | Incomplete
-|Feb. 22| Presentations | Incomplete
+|Feb. 23| Presentations | Incomplete
 
 ## Timeframes
 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: |
-| Homepage | H | 3hrs| 1hrs |
+| Homepage | H | 3hrs| 4hrs |
 | Title Components | H | 3hrs| 2hrs |
 | Detail Components | H | 3hrs| 5hrs |
 | Create Forms | H | 3hrs| 2hrs |
 | Edit Forms | H | 3hrs| 1hrs |
 | Promote Form | H | 3hrs| 1hrs |
-| mediaquery | H | 6hrs| -hrs |
-| CSS | H | 8hrs| 3hrs |
-| Debugging | H| 8hrs| 2hrs |
-| Total | H | 40hrs| 20hrs |
+| mediaquery | H | 6hrs| 2hrs |
+| CSS | H | 8hrs| 9hrs |
+| Debugging | H| 8hrs| 5hrs |
+| Total | H | 40hrs| 31hrs |
 
 ## SWOT Analysis
 
