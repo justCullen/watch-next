@@ -48,19 +48,21 @@ function Form(props) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>Title:</label>
-      <input value={title} onChange={(e) => setTitle(e.target.value)}></input>
-      <label>Type:</label>
-      <input value={type} onChange={(e) => setType(e.target.value)}></input>
-      <label>Source:</label>
-      <input value={source} onChange={(e) => setSource(e.target.value)}></input>
-      <label>Year:</label>
-      <input value={year} onChange={(e) => setYear(e.target.value)}></input>
-      <label>Priority:</label>
-      <input value={priority} onChange={(e) => setPriority(e.target.value)}></input>
-      <button type="submit">Add</button>
-    </form>
+    // <div className="new-form">
+      <form onSubmit={handleSubmit}>
+        <label>Title:</label>
+        <input value={title} onChange={(e) => setTitle(e.target.value)}></input>
+        <label>Type:</label>
+        <input value={type} onChange={(e) => setType(e.target.value)}></input>
+        <label>Source:</label>
+        <input value={source} onChange={(e) => setSource(e.target.value)}></input>
+        <label>Year:</label>
+        <input value={year} onChange={(e) => setYear(e.target.value)}></input>
+        <label>Priority:</label>
+        <input value={priority} onChange={(e) => setPriority(e.target.value)}></input>
+        <button type="submit">Add</button>
+      </form>
+    // </div>
   )
 }
 

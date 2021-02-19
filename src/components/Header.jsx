@@ -2,9 +2,13 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <nav className="header">
-        <Link to="/"><h2 className="to-do">WatchNext</h2></Link>
-        <Link to="/reviews"><h3 className="to-done">Reviews</h3></Link>
+    <nav>
+      <div className="header-link">
+        <Link to="/"><h2>WatchNext</h2></Link>
+      </div>
+      <div className="header-link">
+        <Link to="/reviews"><h2>Reviews</h2></Link>
+      </div>
     </nav>
   );
 }

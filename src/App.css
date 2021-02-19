@@ -5,17 +5,28 @@
   text-align: center;
 }
 
-.header {
+nav {
   display: flex;
   flex-flow: row nowrap;
-  /* justify-content: space-around; */
+  justify-content: space-evenly;
+  width: 100%;
 }
 
-.show-container {
-  padding-bottom: 5%;
-}
-
-/* .to-do, .to-done {
-  display: inline-block;
+/* .header-link {
+  display: flex;
+  margin: 0% 10% 0% 10%;
   justify-content: space-around;
 } */
+
+main {
+  /* display: flex; */
+  padding-bottom: 5%;
+  /* justify-content: flex-start; */
+}
+
+input {
+  display: flex;
+  flex-flow: column nowrap;
+  /* align-items: center; */
+  /* text-align: center; */
+}
