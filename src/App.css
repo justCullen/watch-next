@@ -51,7 +51,7 @@ Form {
   height: 100vh;
 }
 
-DetailToWatch {
+.detail-to-watch {
   background-color: tan;
   display: flex;
   flex-flow: column nowrap;

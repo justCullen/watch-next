@@ -34,7 +34,7 @@ function DetailToWatch(props) {
   }
 
   return (
-    <div>
+    <div className="detail-to-watch">
       <h3>{title}</h3>
       <h4>Type: {type}</h4>
       <h5>{source}</h5>
