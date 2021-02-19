@@ -101,7 +101,8 @@ Form {
 
 main {
   /* display: flex; */
-  padding-bottom: 5%;
+  /* flex-flow: column nowrap; */
+  /* padding-bottom: 5%; */
   width: 100%;
   height: 100vh;
   /* background-color: thistle; */
