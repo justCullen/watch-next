@@ -53,15 +53,21 @@ Form {
 
 .detail-to-watch {
   background-color: tan;
-  display: flex;
+  /* display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  text-align: center;
+  text-align: center; */
   width: 100%;
   height: 100vh;
 }
 
-Promote {
+.detail-watched {
+  background-color: thistle;
+  width: 100%;
+  height: 100vh;
+}
+
+.promote {
   background-color: thistle;
 }
 

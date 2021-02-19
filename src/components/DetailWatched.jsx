@@ -38,7 +38,7 @@ function DetailWatched(props) {
   }
 
   return (
-    <div>
+    <div className="detail-watched">
       <h3>{title}</h3>
       <h4>Type: {type}</h4>
       <h5>{source}</h5>
@@ -46,7 +46,7 @@ function DetailWatched(props) {
       <h5>Priority: {priority}</h5>
       <h5>Recommend: {recommend}</h5>
       <h5>Review: {thoughts}</h5>
-      <Link to={`/edit/${params.id}`}>
+      <Link to={`/promote/${params.id}`}>
         <button>Edit</button>
       </Link>
         <button onClick={destroy}>Delete</button>

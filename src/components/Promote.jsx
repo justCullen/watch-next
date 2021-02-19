@@ -54,7 +54,7 @@ function Promote(props) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="promote" onSubmit={handleSubmit}>
       <label>Title:</label>
       <input value={title} onChange={(e) => setTitle(e.target.value)}></input>
       <label>Type:</label>
