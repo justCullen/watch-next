@@ -29,12 +29,18 @@ nav {
 .header-link-one {
   background-color: tan;
   width: 50%;
+  border-style: solid;
+  border-color: sandybrown;
+  border-width: 3px 3px 0px 3px;
   border-radius: 25% 25% 0 0;
 }
 
 .header-link-two {
   background-color: thistle;
   width: 50%;
+  border-style: solid;
+  border-color: plum;
+  border-width: 3px 3px 0px 3px;
   border-radius: 25% 25% 0 0;
 }
 
@@ -76,11 +82,17 @@ Form {
 
 .title-to-watch {
   background-color: tan;
+  /* border-style: solid; */
+  /* border-color: sandybrown; */
+  /* border-width: 0px 3px 3px 3px; */
 }
 
 .title-watched {
   background-color: thistle;
   width: 100vw;
+  /* border-style: solid; */
+  /* border-color: plum; */
+  /* border-width: 0px 3px 3px 3px; */
 }
 
 main {
@@ -95,14 +107,28 @@ input {
 
 @media screen and (min-width: 426px) {
   .app {
-    margin: 0 20% 0 20%;
+    margin: 0 25% 0 25%;
   }
   
   .title-watched {
-    width: 60vw;
+    width: 50vw;
   }
 
   .title-to-watch {
-    margin: 0 20% 0 20%;
+    margin: 0 25% 0 25%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .app {
+    margin: 0 30% 0 30%;
+  }
+  
+  .title-watched {
+    width: 40vw;
+  }
+
+  .title-to-watch {
+    margin: 0 30% 0 30%;
   }
 }

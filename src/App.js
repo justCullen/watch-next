@@ -32,7 +32,7 @@ function App() {
       {/* <div className="body"> */}
       <Route exact path="/">
         <div className="new-entry">
-          <Link className="link" to="/new">What's Next?</Link>
+          <button><Link className="link" to="/new">What's Next?</Link></button>
         </div>
         <main className="title-to-watch">
           {filteredShows.map((show) => (

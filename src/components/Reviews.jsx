@@ -20,7 +20,7 @@ function Reviews(props) {
       {/* <HeaderReviews /> */}
       {/* <Route exact path="/"> */}
       <div className="new-watched">
-        <Link to="/newreview">Watch Something?</Link>
+        <button><Link to="/newreview">Watch Something?</Link></button>
         </div>
         <main className="title-watched">
           {filteredShows.map((show) => (
