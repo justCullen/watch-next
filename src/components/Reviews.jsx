@@ -15,6 +15,8 @@ function Reviews(props) {
 
   const filteredShows = props.shows.filter(show => show.fields.thoughts);
 
+  filteredShows.sort((a, b) => (a.fields.title > b.fields.title) ? 1 : ((b.fields.title > a.fields.title) ? -1 : 0));
+
   return (
     <div className="app">
       {/* <HeaderReviews /> */}
