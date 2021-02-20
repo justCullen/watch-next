@@ -24,8 +24,9 @@ function App() {
     getMedia();
   }, [toggleFetch]);
 
-  const filteredShows = shows.filter(show => !show.fields.thoughts);
+  const filteredShows = shows.filter(show => !show.fields.thoughts && show.fields.title);
 
+  // sourced from Stack Overflow
   filteredShows.sort((a, b) => (a.fields.title > b.fields.title) ? 1 : ((b.fields.title > a.fields.title) ? -1 : 0));
 
   return (
@@ -34,7 +35,7 @@ function App() {
       {/* <div className="body"> */}
       <Route exact path="/">
         <div className="new-entry">
-          <button><Link className="link" to="/new">What's Next?</Link></button>
+          <button><Link className="link" to="/new">Add to WatchNext</Link></button>
         </div>
         <main className="title-to-watch">
           {filteredShows.map((show) => (

@@ -4,18 +4,19 @@
   align-items: center;
   text-align: center;
   place-items: center;
+  font-family: 'Noto Sans JP', sans-serif;
   /* margin: 0 20% 0 20%; */
 }
 
 a:link,
 a:visited,
 a:active {
-  color: blue;
+  color: black;
   text-decoration: none;
 }
 
 a:hover {
-  color: slategray;
+  /* color: slategray; */
   text-decoration: none;
 }
 
@@ -28,25 +29,20 @@ nav {
 
 .header-link-one {
   background-color: tan;
-  width: 50%;
-  border-style: solid;
   border-color: sandybrown;
-  border-width: 3px 3px 0px 3px;
-  border-radius: 25% 25% 0 0;
 }
 
 .header-link-two {
   background-color: thistle;
-  width: 50%;
-  border-style: solid;
   border-color: plum;
-  border-width: 3px 3px 0px 3px;
-  border-radius: 25% 25% 0 0;
 }
 
-.new-entry {
-  background-color: tan;
-  width: 100%;
+.header-link-one,
+.header-link-two {
+  width: 50%;
+  border-style: solid;
+  border-width: 3px 3px 0px 3px;
+  border-radius: 30% 30% 0 0;
 }
 
 Form {
@@ -75,21 +71,53 @@ Form {
   background-color: thistle;
 }
 
+.new-entry {
+  background-color: tan;
+}
+
 .new-watched {
   background-color: thistle;
+}
+
+.new-entry,
+.new-watched {
   width: 100%;
+  padding-top: 2%;
 }
 
 .title-to-watch {
   background-color: tan;
+  height: 100vh;
+  /* padding-top: 3%; */
   /* border-style: solid; */
   /* border-color: sandybrown; */
   /* border-width: 0px 3px 3px 3px; */
 }
 
+.new-title,
+.watched-title {
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 30px;
+  margin: 2% 15%;
+  transition-duration: 0.4s;
+}
+
+.new-title:hover,
+.watched-title:hover {
+  background-color: #FFFFFF;
+}
+
+.button {
+
+}
+
 .title-watched {
   background-color: thistle;
   width: 100vw;
+  height: 100%;
+  /* padding-top: 3%; */
   /* border-style: solid; */
   /* border-color: plum; */
   /* border-width: 0px 3px 3px 3px; */

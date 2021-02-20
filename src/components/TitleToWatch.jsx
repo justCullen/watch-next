@@ -7,7 +7,7 @@ function TitleToWatch(props) {
   const { title } = props.show.fields;
 
   return (
-    <div>
+    <div className="new-title">
       <Link to={`/watchnext/${props.show.id}`}>
         <h3>{title}</h3>
         </Link>

@@ -40,10 +40,9 @@ function DetailWatched(props) {
   return (
     <div className="detail-watched">
       <h3>{title}</h3>
-      <h4>Type: {type}</h4>
-      <h5>{source}</h5>
+      <h5>Type: {type}</h5>
+      <h5>Source: {source}</h5>
       <h5>{year}</h5>
-      <h5>Priority: {priority}</h5>
       <h5>Recommend: {recommend}</h5>
       <h5>Review: {thoughts}</h5>
       <Link to={`/promote/${params.id}`}>

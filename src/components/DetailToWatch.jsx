@@ -36,8 +36,8 @@ function DetailToWatch(props) {
   return (
     <div className="detail-to-watch">
       <h3>{title}</h3>
-      <h4>Type: {type}</h4>
-      <h5>{source}</h5>
+      <h5>Type: {type}</h5>
+      <h5>Source: {source}</h5>
       <h5>{year}</h5>
       <h5>Priority: {priority}</h5>
       <Link to={`/edittowatch/${params.id}`}>
