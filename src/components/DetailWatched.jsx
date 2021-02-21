@@ -9,7 +9,6 @@ function DetailWatched(props) {
   const [type, setType] = useState("");
   const [source, setSource] = useState("");
   const [year, setYear] = useState("");
-  const [priority, setPriority] = useState("");
   const [recommend, setRecommend] = useState("");
   const [thoughts, setThoughts] = useState("");
   const history = useHistory();
@@ -19,23 +18,22 @@ function DetailWatched(props) {
     if (props.shows.length > 0 && params.id) {
       const foundShow = props.shows.find((show) => params.id === show.id);
       if (foundShow) {
-        setTitle(foundShow.fields.title)
+        setTitle(foundShow.fields.title);
         setType(foundShow.fields.type);
         setSource(foundShow.fields.source);
         setYear(foundShow.fields.year);
-        setPriority(foundShow.fields.priority);
         setRecommend(foundShow.fields.recommend);
         setThoughts(foundShow.fields.thoughts);
       }
     }
-  }, [])
+  }, []);
 
   const destroy = async () => {
-    const showURL = `${baseURL}/${params.id}`
+    const showURL = `${baseURL}/${params.id}`;
     await axios.delete(showURL, config);
     props.setToggleFetch((curr) => !curr);
     history.push("/");
-  }
+  };
 
   return (
     <div className="detail-watched">
@@ -48,9 +46,9 @@ function DetailWatched(props) {
       <Link to={`/promote/${params.id}`}>
         <button>Edit</button>
       </Link>
-        <button onClick={destroy}>Delete</button>
+      <button onClick={destroy}>Delete</button>
     </div>
-  )
+  );
 }
 
 export default DetailWatched;

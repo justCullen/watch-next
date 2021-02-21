@@ -17,21 +17,21 @@ function DetailToWatch(props) {
     if (props.shows.length > 0 && params.id) {
       const foundShow = props.shows.find((show) => params.id === show.id);
       if (foundShow) {
-        setTitle(foundShow.fields.title)
+        setTitle(foundShow.fields.title);
         setType(foundShow.fields.type);
         setSource(foundShow.fields.source);
         setYear(foundShow.fields.year);
         setPriority(foundShow.fields.priority);
       }
     }
-  }, [])
+  }, []);
 
   const destroy = async () => {
-    const showURL = `${baseURL}/${params.id}`
+    const showURL = `${baseURL}/${params.id}`;
     await axios.delete(showURL, config);
     props.setToggleFetch((curr) => !curr);
     history.push("/");
-  }
+  };
 
   return (
     <div className="detail-to-watch">
@@ -46,9 +46,9 @@ function DetailToWatch(props) {
       <Link to={`/promote/${params.id}`}>
         <button>Watched It!</button>
       </Link>
-        <button onClick={destroy}>Delete</button>
+      <button onClick={destroy}>Delete</button>
     </div>
-  )
+  );
 }
 
 export default DetailToWatch;
