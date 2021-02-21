@@ -95,9 +95,9 @@ What follows is a snippet of JSON returned by Airtable:
 | Edit Forms | H | 3hrs| 1hrs |
 | Promote Form | H | 3hrs| 1hrs |
 | mediaquery | H | 6hrs| 2hrs |
-| CSS | H | 8hrs| 9hrs |
+| CSS | H | 8hrs| 13hrs |
 | Debugging | H| 8hrs| 5hrs |
-| Total | H | 40hrs| 31hrs |
+| Total | H | 40hrs| 35hrs |
 
 ## SWOT Analysis
 

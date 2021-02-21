@@ -28,13 +28,18 @@ nav {
 }
 
 .header-link-one {
-  background-color: tan;
-  border-color: sandybrown;
+  /* background-color: tan;
+  border-color: sandybrown; */
+  background-color: #BAD7F2;
+  border-color: #277DCE;
+
 }
 
 .header-link-two {
-  background-color: thistle;
-  border-color: plum;
+  /* background-color: thistle;
+  border-color: plum; */
+  background-color: #F2BAC9;
+  border-color: #CE2754;
 }
 
 .header-link-one,
@@ -46,7 +51,9 @@ nav {
 }
 
 Form {
-  background-color: tan;
+  /* background-color: tan; */
+  background-color: #BAD7F2;
+  /* border-color: #277DCE; */
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -56,27 +63,44 @@ Form {
 }
 
 .detail-to-watch {
-  background-color: tan;
+  /* background-color: tan; */
+  background-color: #BAD7F2;
+  border-color: #277DCE;
+  border-style: solid;
+  border-width: 3px 3px 0px 3px;
   width: 100%;
   height: 100vh;
 }
 
 .detail-watched {
-  background-color: thistle;
+  /* background-color: thistle; */
+  background-color: #F2BAC9;
+  border-color: #CE2754;
+  border-style: solid;
+  border-width: 3px 3px 0px 3px;
   width: 100%;
   height: 100vh;
 }
 
 .promote {
-  background-color: thistle;
+  /* background-color: thistle; */
+  background-color: #F2BAC9;
 }
 
 .new-entry {
-  background-color: tan;
+  /* background-color: tan; */
+  background-color: #BAD7F2;
+  border-color: #277DCE;
+  border-style: solid;
+  border-width: 3px 3px 0px 3px;
 }
 
 .new-watched {
-  background-color: thistle;
+  /* background-color: thistle; */
+  background-color: #F2BAC9;
+  border-color: #CE2754;
+  border-style: solid;
+  border-width: 3px 3px 0px 3px;
 }
 
 .new-entry,
@@ -86,7 +110,9 @@ Form {
 }
 
 .title-to-watch {
-  background-color: tan;
+  /* background-color: tan; */
+  background-color: #BAD7F2;
+  /* border-color: #277DCE; */
   height: 100vh;
   /* padding-top: 3%; */
   /* border-style: solid; */
@@ -114,7 +140,8 @@ Form {
 }
 
 .title-watched {
-  background-color: thistle;
+  /* background-color: thistle; */
+  background-color: #F2BAC9;
   width: 100vw;
   height: 100%;
   /* padding-top: 3%; */
