@@ -79,20 +79,23 @@ Form {
   background-color: #bad7f2;
   border-color: #277dce;
   border-style: solid;
-  border-width: 3px 0px 0px 0px;
+  border-width: 3px 0px 3px 0px;
 }
 
 .new-watched {
   background-color: #f2bac9;
   border-color: #ce2754;
   border-style: solid;
-  border-width: 3px 0px 0px 0px;
+  border-width: 3px 0px 3px 0px;
 }
 
 .new-entry,
 .new-watched {
   width: 100%;
-  padding-top: 2%;
+  padding: 2% 0% 2% 0%;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 .title-to-watch {
