@@ -5,6 +5,7 @@
   text-align: center;
   place-items: center;
   font-family: "Noto Sans JP", sans-serif;
+  background-color: grey;
 }
 
 a:link,
@@ -135,7 +136,7 @@ input {
 
 @media screen and (min-width: 426px) {
   .app {
-    margin: 0 25% 0 25%;
+    padding: 0 25% 0 25%;
   }
 
   .title-watched {
@@ -149,7 +150,7 @@ input {
 
 @media screen and (min-width: 769px) {
   .app {
-    margin: 0 30% 0 30%;
+    padding: 0 30% 0 30%;
   }
 
   .title-watched {
