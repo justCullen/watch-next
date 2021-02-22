@@ -2,6 +2,8 @@
 
 ## Watch Next
 
+https://watch-next-project.netlify.app/
+
 ## Project Description
 
 Watch Next is a React and Airtable webapp designed to help users keep track of what to watch and where to watch it, as well as log shows and movies they have watched. It is a to-do list and record of shows and movies the user has watched.
@@ -81,7 +83,6 @@ What follows is a snippet of JSON returned by Airtable:
 |Feb. 18| Initial Clickable Model  | Complete
 |Feb. 19| mediaquery/CSS | Complete
 |Feb. 20| MVP | Complete
-|Feb. 21| Styling/Animations | Incomplete
 |Feb. 23| Presentations | Incomplete
 
 ## Timeframes
