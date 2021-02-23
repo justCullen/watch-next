@@ -56,23 +56,26 @@ function Promote(props) {
       <input value={title} onChange={(e) => setTitle(e.target.value)}></input>
       <label>Movie/Series: </label>
       <select value={type} onChange={(e) => setType(e.target.value)}>
-        <option value="Movie">Movie</option>
-        <option value="Series">Series</option>
+      <option>Choose Movie or Series</option>
+        <option>Movie</option>
+        <option>Series</option>
       </select>
       <label>Service: </label>
       <select value={source} onChange={(e) => setSource(e.target.value)}>
-        <option value="Netflix">Netflix</option>
-        <option value="Hulu">Hulu</option>
-        <option value="Disney+">Disney+</option>
-        <option value="HBO Max">HBO Max</option>
-        <option value="Prime Video">Prime Video</option>
-        <option value="Plex">Plex</option>
-        <option value="Personal Library">Personal Library</option>
+      <option>Choose a Service</option>
+        <option>Netflix</option>
+        <option>Hulu</option>
+        <option>Disney+</option>
+        <option>HBO Max</option>
+        <option>Prime Video</option>
+        <option>Plex</option>
+        <option>Personal Library</option>
       </select>
       <label>Year:</label>
       <input value={year} onChange={(e) => setYear(e.target.value)}></input>
       <label>Recommend:</label>
       <select value={recommend} onChange={(e) => setRecommend(e.target.value)}>
+        <option>Recommend this?</option>
         <option value="Yes">Yes</option>
         <option value="No">No</option>
       </select>
